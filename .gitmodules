@@ -1,0 +1,3 @@
+[submodule "modules/aws_handler"]
+	path = modules/aws_handler
+	url = https://github.com/SeohaSong/aws_handler.git
