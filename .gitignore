@@ -8,3 +8,6 @@
 
 gitfree/*
 !gitfree/.gitkeep
+
+data/*
+!data/.gitkeep
