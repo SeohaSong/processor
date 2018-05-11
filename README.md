@@ -1,9 +1,9 @@
-# 파일 실행 순서
+# File execution order
 
 1. 
 ```bash
-$ python initiate.py
-$ python load-data.py
+$ python set-up.py
 ```
 
-2. main.ipynb
+2. 
+> open main.ipynb on jupyter-notebook's server
