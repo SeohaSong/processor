@@ -6,4 +6,4 @@ $ python set-up.py
 ```
 
 2. 
-> open main.ipynb on jupyter-notebook's server
+> Open main.ipynb on jupyter-notebook's server
