@@ -2,9 +2,5 @@
 import os
 
 
-cmd = """
-git submodule init
-git submodule update
-"""
-
-os.system(cmd)
+os.system("git submodule init")
+os.system("git submodule update")
