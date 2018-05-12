@@ -1,6 +1,6 @@
 
 # The order is important.
-from module import load_module
+from module import module
 from module.aws_handler import S3
 
 
