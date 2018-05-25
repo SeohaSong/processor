@@ -30,5 +30,3 @@ text = re.sub(r' $', '', text)
 text = text.lower()
 # 소문자로 변환
 ```
-
-2. 
