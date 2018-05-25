@@ -5,6 +5,17 @@ import re
 import sys
 
 
+def load_df():
+    
+    # 50,000 labeled data + 50,000 unlabled data
+    df = pd.read_pickle("./data/imdb_master_df")
+    # Remove unlabeled data.
+    df = df[df["label"] != "unsup"]
+    df = df.drop(["file"], axis=1)
+
+    return df
+
+
 def preprocess(df):
 
     def process(i, text):
@@ -54,12 +65,7 @@ def get_freq(df):
 
 if __name__ == "__main__":
 
-    # 50,000 labeled data + 50,000 unlabled data
-    df = pd.read_pickle("./data/imdb_master_df")
-
-    # Remove unlabeled data.
-    df = df[df["label"] != "unsup"]
-
+    df = load_df()
     df = preprocess(df)
     freq = get_freq(df)
 
